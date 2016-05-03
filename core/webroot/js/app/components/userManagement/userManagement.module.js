@@ -1,1 +1,0 @@
-appConfig.registerModule('userManagement');
