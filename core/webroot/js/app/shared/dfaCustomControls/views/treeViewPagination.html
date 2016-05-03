@@ -1,0 +1,23 @@
+<div>
+    <ng-tree-view class="tree-view" ng-model="selectedList" selected-parent-nodes="selectedParentNodes" tree-list-model="treeListModel" tree-view-options="treeViewOptions" search-text="searchText" search-count="searchCount" pagination-from="pagination.from" pagination-to="pagination.to" expanded-nodes="expandedNodes">
+    </ng-tree-view>
+    <div class="pagination-wrapper" ng-hide="pagination.totalCount == 0">
+        <pagination total-items="pagination.totalCount" ng-model="pagination.currentPage" ng-change="paginationChanged()" items-per-page="pagination.pageSize" max-size="5" class="pagination-sm" boundary-links="true" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" rotate="false"></pagination>
+        <div class="counter">
+            {{languageText.showing}} {{pagination.from}} {{languageText.to}} {{pagination.to > pagination.totalCount ? pagination.totalCount : pagination.to}}  {{languageText.of}} {{pagination.totalCount}} {{languageText.records}}
+        </div>
+        <div class="display-limit">
+            <span>{{languageText.dislpay}}</span>
+            <div class="input-select-wrapper">
+                <select ng-model="pagination.pageSize" ng-change="paginationChanged()">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <p>{{languageText.records}}</p>
+        </div>
+    </div>
+</div>

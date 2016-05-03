@@ -1,0 +1,100 @@
+<?php
+namespace Security\Controller\Component;
+use Cake\Controller\Component;
+use Cake\ORM\TableRegistry;
+use Cake\Core\Configure;
+use Cake\I18n\Time;
+use AppServiceUtil\Model\Table\UtilTableTrait;
+
+/**
+ * Area Component
+ */
+class SecurityComponent extends Component {   
+    public $components = ['Auth'];
+    public $userTableObj = NULL;
+    public $roleTableObj = NULL;
+    public $permissionTableObj = NULL;
+    public $rolePermissionsTableObj = NULL;
+
+    public function initialize(array $config) {
+        parent::initialize($config);
+        $this->session = $this->request->session();  
+        $this->userTableObj = TableRegistry::get('User.User');
+        $this->rolesTableObj = TableRegistry::get('Security.Roles');
+        $this->permissionsTableObj = TableRegistry::get('Security.Permissions');
+		$this->ModulesTableObj = TableRegistry::get('Security.Modules');
+		$this->moduleSrvTableObj = TableRegistry::get('Security.ModuleService');
+        $this->rolePermissionsTableObj = TableRegistry::get('Security.RolePermissions');      
+        
+    }
+
+	/* Function to check if id is registered in permissions table
+    *
+    */
+    public function getModuleServiceDetailById($id){
+        $result = $this->moduleSrvTableObj->getFirst([],['id' => $id]);
+        return $result;
+    }
+
+	/* Function to check if id is registered in permissions table
+    *
+    */
+    public function getModuleDetailById($id){
+        $result = $this->ModulesTableObj->getFirst([],['id' => $id]);
+		return $result;
+    }
+
+
+    /*
+    * Function to get Permission table row
+    */
+    public function getPermissionDetailById($permissionId){
+        $result = $this->permissionsTableObj->getFirst([],['id' => $permissionId]);
+        return $result;
+    }
+    /* Function to check if id is registered in permissions table
+    *
+    */
+    public function checkPermissionExists($id){
+        $isFound = $this->permissionsTableObj->getCount(['id' => $id]);
+        return $isFound;
+    }
+    /* Function to check if logged in user has permission assigned
+    *
+    */
+    public function checkDefaultPermissionAssigned($permissionId){
+        $userId = $this->Auth->User('id');
+        if($userId >0){
+                //Get default role
+               $def_role = $this->userTableObj->getUserDefaultRole($userId);
+                if($def_role){                   
+                    $roleHasPermission = $this->rolePermissionsTableObj->checkRoleHasPermission($def_role,$permissionId);
+                    if($roleHasPermission){
+                        return TRUE;
+                    }
+
+                }
+               
+        }        
+       return FALSE;  
+    }
+
+    /*
+    * method checkActionAuthorisation
+    * Used to check authorisation for the service request
+    * @param $actionCode
+    * @Return true/false
+    */
+    public function checkActionAuthorisation($actionCode){
+        $excludeAuthoriseActions = Configure::read('ExcludeAuthoriseActions');
+        if(in_array($actionCode,$excludeAuthoriseActions)){
+            return TRUE;
+        }
+        //Custom authorisation logic goes here
+        return TRUE;
+
+
+    }
+    
+
+}

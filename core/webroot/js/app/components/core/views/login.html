@@ -1,0 +1,39 @@
+<div class="login body-wrapper">
+    <div class="login-box">
+        <div class="title">
+            <span class="title-wrapper">
+                <!--<i class="kd-openemis ltl-view"></i>-->
+                <img style="max-height: 38px;" src="img/logo.png">
+                <h1>{{$root.appTitle}}</h1>
+                <!--<i class="kd-openemis rtl-view"></i>-->
+            </span>
+        </div>
+        <div class="alert alert-danger" ng-show="loginFailed == true">
+            <a class="close" ng-click="closeLoginFailedAlert()">×</a>
+            {{loginFailedMsg}}
+        </div>
+        <form method="post" accept-charset="utf-8" class="form-horizontal" ng-submit="login(credentials)">
+            <div class="input text">
+                <input type="text" name="username" autocomplete="off" placeholder="Username" id="username" ng-model="credentials.username">
+            </div>
+            <input style="display:none">
+            <div class="input password">
+                <input type="password" name="password" placeholder="Password" id="password" ng-model="credentials.password">
+            </div>
+            <div class="input-select-wrapper">
+                <div class="input select">
+                    <select ng-model="$root.selectedLangCode" ng-options="lang.code as lang.name for lang in languageOptions" ng-change="onLanguageChange()">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="submit" value="login" class="btn btn-primary btn-login">{{getTranslatedKey('LOGIN')}}</button>
+                <div class="forgot-password">
+                    <center>
+                        <a ui-sref="dfaMonitoring.forgotPassword">{{getTranslatedKey('FRGT_PASSWORD')}}</a>
+                    </center>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

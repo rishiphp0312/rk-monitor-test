@@ -1,0 +1,52 @@
+<div class="pane-container ng-scope">
+    <div class="left-menu">
+        <uib-accordion>
+            <uib-accordion-group is-disabled="true" is-open="false" template-url="js/app/shared/uiBootstrap/template/accordion-group.html">
+                <uib-accordion-heading>
+                    <span><i class="fa fa-table"></i></span>
+                    <b>Plan</b>
+                </uib-accordion-heading>
+                <ul class="nav nav-level-2">
+                    <li ui-sref-active="nav-active">
+                        <a>
+                               Planning
+                        </a>
+                    </li>
+                    <li ui-sref-active="nav-active">
+                        <a>
+                               Reporting
+                        </a>
+                    </li>
+                </ul>
+            </uib-accordion-group>
+            <uib-accordion-group is-open="isOpen" template-url="js/app/shared/uiBootstrap/template/accordion-group.html">
+                <uib-accordion-heading>
+                    <span><i class="fa fa-cogs"></i></span>
+                    <b>Administration</b>
+                </uib-accordion-heading>
+                <ul class="nav nav-level-2">
+                    <li ui-sref-active="nav-active">
+                        <a>
+                            Modules
+                        </a>
+                    </li>
+                    <li ui-sref-active="nav-active">
+                        <a>
+                            Tags
+                        </a>
+                    </li>
+                    <li ui-sref-active="nav-active">
+                        <a>
+                            Markers
+                        </a>
+                    </li>
+                    <li ui-sref-active="nav-active">
+                        <a>
+                            Indicator Types
+                        </a>
+                    </li>
+                </ul>
+            </uib-accordion-group>
+        </uib-accordion>
+    </div>
+</div>

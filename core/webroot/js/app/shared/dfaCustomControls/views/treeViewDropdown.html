@@ -1,0 +1,31 @@
+<div dropdown is-open="dropdown.isOpen" auto-close="outsideClick">
+    <div class="dropdown-label" ng-click="toggleDropdown()">
+        <input type="text" placeholder="{{properties.placeholder}}" readonly="" ng-model="dropdown.displayText"  ng-disabled="disabled">
+        <span class="dropdownLink"></span>
+    </div>
+    <div class="dropdown-menu">
+        <div ng-show="dropdownList">
+            <div class="dropdown-menubar" ng-if="properties.search != false">
+                <input type="text" class="search-dropdown" placeholder="{{properties.searchPlaceholderText}}" ng-model="dropdown.searchText"></input>
+                <span class="input-group-btn">
+                    <button class="btn btn-xs btn-reset" type="button" ng-click="dropdown.searchText = ''"><i class="fa fa-close"></i></button>
+                </span>
+            </div>
+            <div class="treeview-list">
+                <ng-tree-view class="tree-view" ng-model="dropdown.selectedList" tree-list-model="dropdownList" tree-view-options="treeViewOptions" search-text="dropdown.searchText" search-count="search.searchCount">
+                </ng-tree-view>
+            </div>
+            <div class="dropdown-footermenubar" ng-if="properties.showSelected != false">
+                <span>{{properties.selectedText}}: {{dropdown.selectedList.length}}</span>
+                <!--{{search.searchCount}}-->
+            </div>
+            <div class="dropdown-action-buttons">
+                <center>
+                    <a class="btn btn-default btn-xs" ng-click="confirm()" ng-if="treeViewOptions.selectionOptions.multiSelection == true">{{properties.confirmText}}</a>
+                    <a class="btn btn-default btn-xs" ng-click="reset()" ng-if="properties.showReset == true">{{properties.resetText}}</a>
+                    <a class="btn btn-default btn-xs" ng-show="onAdd != undefined" ng-click="add()">{{properties.addText}}</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>

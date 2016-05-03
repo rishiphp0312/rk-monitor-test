@@ -1,0 +1,11 @@
+<bg-splitter orientation="horizontal" class="pane-wrapper" lang-dir="$root.langDir">
+    <bg-pane class="left-pane">
+        <ng-include src="WEBROOT_URL + 'js/app/components/home/views/menuBar.html'"></ng-include>
+    </bg-pane>
+    <bg-pane class="pane-container">
+        <div id="page-content-wrapper" style="height: 100%;">
+            <div class="content-wrapper" ui-view="moduleView">
+            </div>
+        </div>
+    </bg-pane>
+</bg-splitter>

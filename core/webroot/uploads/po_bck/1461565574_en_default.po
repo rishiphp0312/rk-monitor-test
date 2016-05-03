@@ -1,0 +1,1041 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);"
+"Project-Id-Version: EQUIST"
+"POT-Creation-Date: "
+"PO-Revision-Date: "
+"Last-Translator: "
+"Language-Team: EQUIST <equist@dataforall.org>"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+"Language: en"
+"X-Generator: Poedit 1.8.5"
+"X-Poedit-SourceCharset: UTF-8"
+msgid "ABOUT"
+msgstr "av2"
+
+msgid "CONTACT"
+msgstr "Contact"
+
+msgid "LICENCE"
+msgstr "Licence"
+
+msgid "PARTNERS"
+msgstr "Partners"
+
+msgid "PWD_CHANGED_SUCCESS"
+msgstr "Password changed successfully."
+
+msgid "USER_NAME"
+msgstr "User Name"
+
+msgid "STATUS"
+msgstr "Status"
+
+msgid "LAST_LOGIN"
+msgstr "Last Login"
+
+msgid "MODIFIED_BY"
+msgstr "Modified By"
+
+msgid "MODIFIED_DATE"
+msgstr "Modified Date"
+
+msgid "CREATED_BY"
+msgstr "Created By"
+
+msgid "CREATED_DATE"
+msgstr "Created Date"
+
+msgid "ROLES"
+msgstr "Roles"
+
+msgid "DATABASE"
+msgstr "Database"
+
+msgid "USERNAME_REQ"
+msgstr "Username is required"
+
+msgid "PASSWORD"
+msgstr "Password"
+
+msgid "PASSWORD_REQ"
+msgstr "Password is required"
+
+msgid "NEW_PASSWORD"
+msgstr "New Password"
+
+msgid "NEW_PASSWORD_REQ"
+msgstr "New Password is required"
+
+msgid "CONFIRM_PASSWORD"
+msgstr "Confirm Password"
+
+msgid "PASSWORD_MATCH_ERR"
+msgstr "New password and confirm password should be same"
+
+msgid "CONFIRM_PASSWORD_REQ"
+msgstr "Confirm Password is required"
+
+msgid "LOGIN"
+msgstr "Login"
+
+msgid "LOGOUT"
+msgstr "Logout"
+
+msgid "ADD"
+msgstr "Add"
+
+msgid "DATABASES"
+msgstr "Databases"
+
+msgid "TEMPLATE"
+msgstr "Template"
+
+msgid "AREA_LEVEL"
+msgstr "Area Level"
+
+msgid "MODIFY"
+msgstr "About899"
+
+msgid "SAVE_SUCCESS_MSG"
+msgstr "The record has been saved successfully."
+
+msgid "ERR_MSG_50_CHAR"
+msgstr "This field cannot exceed 50 characters."
+
+msgid "ERR_MSG_128_CHAR"
+msgstr "This field cannot exceed 128 characters."
+
+msgid "SAVE"
+msgstr "Save"
+
+msgid "SAVE_ADD_ANOTHER"
+msgstr "Save and Add another"
+
+msgid "CANCEL"
+msgstr "Cancel"
+
+msgid "DELETE_SUCCESS_MSG"
+msgstr "The record has been deleted successfully."
+
+msgid "NO_RECORD_MSG"
+msgstr "There are no records."
+
+msgid "NAME"
+msgstr "Name"
+
+msgid "NAME_REQ"
+msgstr "Name is required."
+
+msgid "ERR_MSG_60_CHAR"
+msgstr "This field cannot exceed 60 characters."
+
+msgid "ERR_MSG_255_CHAR"
+msgstr "This field cannot exceed 255 characters."
+
+msgid "CONVERT_TO_GRP"
+msgstr "Convert to group"
+
+msgid "WRNG_SELECT_AREA"
+msgstr "Please select area."
+
+msgid "SELECTED"
+msgstr "Selected:"
+
+msgid "RESET"
+msgstr "Reset"
+
+msgid "GROUP"
+msgstr "Group"
+
+msgid "EDIT_GRP"
+msgstr "Edit Group"
+
+msgid "EDIT"
+msgstr "Edit"
+
+msgid "GEO_AREAS"
+msgstr "Geographical Areas"
+
+msgid "AREA_NAME"
+msgstr "Area Name"
+
+msgid "LEVEL"
+msgstr "Level"
+
+msgid "AREA_DETAILS"
+msgstr "Area Details"
+
+msgid "AREA_NAME_REQ"
+msgstr "Area Name is required."
+
+msgid "AREA_ID_REQ"
+msgstr "Area ID is required."
+
+msgid "IMPORT_MAP_FILE"
+msgstr "Import Map File"
+
+msgid "ONLY_ZIP_ALWD"
+msgstr "Only zip format is allowed."
+
+msgid "MAP_NAME"
+msgstr "Map Name"
+
+msgid "START_DATE"
+msgstr "Start date:"
+
+msgid "END_DATE"
+msgstr "End date:"
+
+msgid "AREA_NOT _SELECTED"
+msgstr "Area is not selected."
+
+msgid "MAP"
+msgstr "Map"
+
+msgid "MAP_SHAPE_FILE"
+msgstr "Map File (Shape file)"
+
+msgid "MAP_GEO_FILE"
+msgstr "Map File (GeoJSON file)"
+
+msgid "MAP_NAME_REQ"
+msgstr "Map Name is required."
+
+msgid "START_DATE_REQ"
+msgstr "Start Date is required."
+
+msgid "END_DATE_REQ"
+msgstr "End Date is required."
+
+msgid "ASSOCIATION_TYPE"
+msgstr "Association Type:"
+
+msgid "SIBLING"
+msgstr "Sibling"
+
+msgid "SPLIT"
+msgstr "Split"
+
+msgid "SELECT_SIBLING"
+msgstr "Select sibling"
+
+msgid "ASSOCIATE_MAP"
+msgstr "Associate composite map"
+
+msgid "WRNG_SELECT_MAP"
+msgstr "Please select a Map"
+
+msgid "DELETE_MAP"
+msgstr "Delete Map"
+
+msgid "DELETE"
+msgstr "Delete"
+
+msgid "PREFERENCES"
+msgstr "Preferences"
+
+msgid "RELOAD"
+msgstr "reload"
+
+msgid "ERR_403"
+msgstr "403 Forbidden: No Permission to Access"
+
+msgid "ERR_UNAUTHORIZED"
+msgstr "You don't have permission to access this page on server. If you believe you should be able to view this directory or page, please contact the administrator <a href="#">here</a>."
+
+msgid "BACK"
+msgstr "Back"
+
+msgid "HOME"
+msgstr "Home"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "MULTIPLE_SELECTION"
+msgstr "Multiple Selection"
+
+msgid "SINGLE_SELECTION"
+msgstr "Single Selection"
+
+msgid "PUBLISH_DATA"
+msgstr "Publish Data"
+
+msgid "DASHBOARD_AREA"
+msgstr "Dashboard Area"
+
+msgid "SELECT_AREA"
+msgstr "Select Area"
+
+msgid "ERR_CON_FAILED"
+msgstr "Failed to connect to the database."
+
+msgid "DB_CONNECTED_SUCCESS"
+msgstr "Database connected successfully."
+
+msgid "CONN_NAME"
+msgstr "Connection Name"
+
+msgid "CON_NAME_REQ"
+msgstr "Connection Name is required."
+
+msgid "CONN_NAME_EXTS"
+msgstr "Connection name already exists."
+
+msgid "DB_TYPE"
+msgstr "Database Type"
+
+msgid "HOST_ADD"
+msgstr "Host Address"
+
+msgid "HOST_ADD_REQ"
+msgstr "Host Address is required."
+
+msgid "DB_NAME"
+msgstr "Database Name"
+
+msgid "DB_NAME_REQ"
+msgstr "*Database Name is required."
+
+msgid "USERNAME"
+msgstr "Username"
+
+msgid "PWD_REQ"
+msgstr "*Password is required."
+
+msgid "PORT"
+msgstr "Port"
+
+msgid "PORT_REQ"
+msgstr "*Port Number is required."
+
+msgid "CREATE_NEW_DB"
+msgstr "Create as a new database"
+
+msgid "TEST_CON"
+msgstr "Test Connection"
+
+msgid "DB_DOWNLOAD_MSG"
+msgstr "Database files are being processed. You will recieve a mail once the database is ready for download."
+
+msgid "METADATA"
+msgstr "Metadata"
+
+msgid "DATA"
+msgstr "Data"
+
+msgid "UPDATED_ON"
+msgstr "Updated on"
+
+msgid "ACTIONS"
+msgstr "Actions"
+
+msgid "VIEW_METADATA"
+msgstr "View Metadata"
+
+msgid "DOWNLOAD"
+msgstr "Download"
+
+msgid "RECORDS"
+msgstr "records"
+
+msgid "SAVEAS"
+msgstr "Save As"
+
+msgid "EXISTING_CON_NAME"
+msgstr "Existing Connection Name"
+
+msgid "INDICATORS"
+msgstr "Indicators"
+
+msgid "IUS"
+msgstr "Indicator Unit Subgroup"
+
+msgid "SOURCES"
+msgstr "Sources"
+
+msgid "DB_DETAILS"
+msgstr "Database details"
+
+msgid "UPDATE"
+msgstr "Update"
+
+msgid "LANGUAGES"
+msgstr "Languages"
+
+msgid "EMAIL"
+msgstr "Email"
+
+msgid "ROLE"
+msgstr "Role"
+
+msgid "LAST_UPDATED_ON"
+msgstr "Last updated on"
+
+msgid "LAST_UPDATED_BY"
+msgstr "Last updated by"
+
+msgid "UNIT"
+msgstr "Unit"
+
+msgid "SUBGROUP"
+msgstr "Subgroup"
+
+msgid "DIMENSIONS"
+msgstr "Dimensions"
+
+msgid "VALIDATIONS"
+msgstr "Validations"
+
+msgid "IMPRT_EXRT"
+msgstr "Import/Export"
+
+msgid "DATAENTRY"
+msgstr "Data Entry"
+
+msgid "TIME_PERIOD"
+msgstr "Time Period"
+
+msgid "SOURCE"
+msgstr "Source"
+
+msgid "TXN_LOGS"
+msgstr "Transaction Logs"
+
+msgid "AREA_SELECTION_MSG"
+msgstr "Atleast one area needs to be selected."
+
+msgid "INDICATOR_SELECTION_MSG"
+msgstr "Atleast one indicator needs to be selected."
+
+msgid "TIME_PERIOD_SELECTION_MSG"
+msgstr "Atleast one time period needs to be selected."
+
+msgid "SEARCH"
+msgstr "Search"
+
+msgid "GROUPBY"
+msgstr "Group By"
+
+msgid "ROWS"
+msgstr "Rows"
+
+msgid "COLUMNS"
+msgstr "Columns"
+
+msgid "DATA_ROWS"
+msgstr "Data Row"
+
+msgid "DATA_VAL_NUMERIC"
+msgstr "Data Value should be numeric."
+
+msgid "DATA_VAL_LESS"
+msgstr "Data Value should not be less than"
+
+msgid "DATA_VAL_EXCEED"
+msgstr "Data Value should not exceed "
+
+msgid "SOURCE_EMPTY"
+msgstr "Source cannot be emtpy."
+
+msgid "VALUE"
+msgstr "Value"
+
+msgid "IDENTIFIER"
+msgstr "Identifier"
+
+msgid "DIMENSIONS_REQ"
+msgstr "Dimension is required."
+
+msgid "IDENTIFIER_INVALID"
+msgstr "Invalid identifier."
+
+msgid "DIM_VALUES"
+msgstr "Dimension Values"
+
+msgid "DIM_VALUES_BLANK"
+msgstr "Dimension value cannot be blank."
+
+msgid "DIM_VALUE_EXTS"
+msgstr "Dimension value already exists."
+
+msgid "DIM_VAL_GID_EXTS"
+msgstr "Dimension value GID already exists."
+
+msgid "DIMENSION"
+msgstr "Dimension"
+
+msgid "WRNG_SELECT_DIM"
+msgstr "Please select Dimension."
+
+msgid "REORDER"
+msgstr "Re Order"
+
+msgid "ADD_DIM_CTGRY"
+msgstr "Add Dimension Category"
+
+msgid "CLASSIFICATIONS_TYPE"
+msgstr "Classification Type"
+
+msgid "SELECT_IUS"
+msgstr "Select IUS"
+
+msgid "WRNG_SELECT_IC"
+msgstr "Please select Indicator classification."
+
+msgid "IND_CLASSIFICATION"
+msgstr "Indicator Classification"
+
+msgid "EXPORT_DES_TXT"
+msgstr "Click the 'Export' button to download the Data Entry Spreadsheet. The data to be exported can be filtered by Indicators, Areas and Time periods.Kindly note that exporting the Data Entry Spreadsheet can be a time consuming process, depending upon the database size and the internet connection."
+
+msgid "IMPORT_DES_TXT"
+msgstr "In order to import the data to the database, kindly select a file to be imported and then click on the 'Import' button.   Kindly note that the file to be imported should follow the same format as that of the exported Data Entry Spreadsheet file."
+
+msgid "DOWNLOAD_DATA_FILE"
+msgstr "Click here to download data file."
+
+msgid "DOWNLOAD_LOG_FILE"
+msgstr "Click here to download log file."
+
+msgid "IC_IUS"
+msgstr "Indicator Classifications and IUS"
+
+msgid "EXPORT_IND_TXT"
+msgstr "Click on the 'Export' Button to download all the Indicator Classifications and its IUS in an Excel file. The same file format would be used to import the Indicator Classifications and its IUS."
+
+msgid "EXPORT_GEO_AREA_TXT"
+msgstr "Click on the 'Export' Button to download all the Geographic Areas in an excel file. The same file format would be used to import the Geographical Areas.  In order to import the Indicator Classifications and IUS to the database, kindly select a file to be imported and then click on the 'Import' button. Kindly note that the file to be imported should follow the same format as that of the exported Indicator Classifications and IUS file."
+
+msgid "IMPORT_GEO_AREA_TXT"
+msgstr "In order to import the Geographic Areas to the database, kindly select a file to be imported and then click on the 'Import' button. Kindly note that the file to be imported should follow the same format as that of the exported Geographic Areas file."
+
+msgid "DATA_IMPORT_SUCCESS"
+msgstr "Data have been imported successfully."
+
+msgid "IC_IUS_IMPORT_SUCCESS"
+msgstr "IUS and Indicator Classifications have been imported successfully."
+
+msgid "GEO_AREA_IMPORT_SUCCESS"
+msgstr "Geographic Areas have been imported successfully."
+
+msgid "UNIT_OF_MEASURE"
+msgstr "Unit of measurement"
+
+msgid "UNIT_SELECTION"
+msgstr "Unit has to be selected."
+
+msgid "SUBGRP_SELECTION_MSG"
+msgstr "Atleast one subgroup has to be selected."
+
+msgid "IND_METADATA"
+msgstr "Indicator Metadata"
+
+msgid "DELETE_FROM_DB"
+msgstr "Delete from database"
+
+msgid "DELETE_FROM_IND"
+msgstr "Delete from indicator"
+
+msgid "WRNG_SELECT_IND"
+msgstr "Please select Indicator."
+
+msgid "IND_UNIT"
+msgstr "Indicator Unit"
+
+msgid "VALID"
+msgstr "Validations"
+
+msgid "WRNG_SELECT_IUS"
+msgstr "Please select IUS."
+
+msgid "IS_TEXTUAL"
+msgstr "Is Textual"
+
+msgid "MIN_VALUE"
+msgstr "Minimum Value"
+
+msgid "MIN_VALUE_LESS_THAN_MAX"
+msgstr "Minimum value can not be greater than maximum value ."
+
+msgid "MAX_VALUE"
+msgstr "Maximum Value"
+
+msgid "SAVE_APPLY_TO_OTHERS"
+msgstr "Save and Apply to others"
+
+msgid "DEFAULT_LANG"
+msgstr "Default language"
+
+msgid "TRANS_FROM"
+msgstr "Translate From"
+
+msgid "TRANS_FROM_REQ"
+msgstr "Translate from is required."
+
+msgid "TRANS_TO"
+msgstr "Translate To"
+
+msgid "TRANS_TO_REQ"
+msgstr "Translate to is required."
+
+msgid "DOWNLOAD_LANG_FILE"
+msgstr "Click here to download Language file."
+
+msgid "FILE_IMPORT_SUCCESS"
+msgstr "File has been imported successfully."
+
+msgid "PUBLISHER"
+msgstr "Publisher"
+
+msgid "TITLE"
+msgstr "Title"
+
+msgid "TITLE_REQ"
+msgstr "Title is required."
+
+msgid "YEAR"
+msgstr "Year"
+
+msgid "YEAR_REQ"
+msgstr "Year is required."
+
+msgid "SHORT_NAME"
+msgstr "Short Name"
+
+msgid "ADD_SOURCE"
+msgstr "Add Source"
+
+msgid "SOURCE_MODIFIED"
+msgstr "Source modified successfully."
+
+msgid "SOURCE_ADDED"
+msgstr "Source added successfully."
+
+msgid "SUBGROUP_DIM"
+msgstr "Subgroup Dimensions"
+
+msgid "ADD_DIM"
+msgstr "Add Dimension"
+
+msgid "WRNG_SELECT_SUBGROUP"
+msgstr "Please select Subgroup."
+
+msgid "DOWNLOAD_SUBGRP_FILE"
+msgstr "Click here to download Subgroup file."
+
+msgid "DELETE_SUBGRP"
+msgstr "Delete Subgroup"
+
+msgid "DEF_PAGE_SIZE"
+msgstr "Default page size"
+
+msgid "WEBSITE_TITLE"
+msgstr "Website Title"
+
+msgid "WEBSITE_TITLE_REQ"
+msgstr "Website Title is required."
+
+msgid "FOOTER_CONTENT"
+msgstr "Footer Content"
+
+msgid "COLOR_TO"
+msgstr "Color To"
+
+msgid "BG_IMAGE"
+msgstr "Background Image"
+
+msgid "CODE"
+msgstr "Code"
+
+msgid "VISIBLE"
+msgstr "Visible"
+
+msgid "CONFIGURATIONS"
+msgstr "Configurations"
+
+msgid "SETTINGS"
+msgstr "Settings"
+
+msgid "MODULES"
+msgstr "Modules"
+
+msgid "TP_FORMAT"
+msgstr "Time period format"
+
+msgid "WRNG_SELECT_TP"
+msgstr " Please select a Time Period"
+
+msgid "ADD_TP"
+msgstr "Add Time Period"
+
+msgid "CLOSE"
+msgstr "Close"
+
+msgid "ADVNC_SEARCH"
+msgstr "Advanced Search"
+
+msgid "MODULE"
+msgstr "Module"
+
+msgid "SUB_MODULE"
+msgstr "Sub-module "
+
+msgid "TYPE"
+msgstr "Type"
+
+msgid "PREV_VALUE"
+msgstr "Previous Value"
+
+msgid "NEW_VALUE"
+msgstr "New Value"
+
+msgid "SELECT"
+msgstr "Select"
+
+msgid "USER"
+msgstr "User"
+
+msgid "DATE"
+msgstr "Date"
+
+msgid "DELETE_LOG"
+msgstr "Are you sure you want to delete this log."
+
+msgid "LOGS"
+msgstr "logs"
+
+msgid "UNIT_NAME_REQ"
+msgstr "Unit name is required."
+
+msgid "WRNG_SELECT_UNIT"
+msgstr "Please select unit."
+
+msgid "UNITS"
+msgstr "Units"
+
+msgid "CLICK"
+msgstr "Click"
+
+msgid "HERE"
+msgstr "here"
+
+msgid "DOWNLOAD_FILE"
+msgstr "to download file."
+
+msgid "EMAIL_REQ"
+msgstr "Email is required."
+
+msgid "EMAIL_INAVLID"
+msgstr "Email Address is invalid."
+
+msgid "ADMIN"
+msgstr "Admin"
+
+msgid "ACCESS_TYPE"
+msgstr "Access Type"
+
+msgid "ACCESS"
+msgstr "Access"
+
+msgid "ALL"
+msgstr "All"
+
+msgid "MULTIPLE"
+msgstr "Multiple"
+
+msgid "ROLE_SELECTION"
+msgstr "*Atleast one role should be selected."
+
+msgid "ACTIVE"
+msgstr "Active"
+
+msgid "INACTIVE"
+msgstr "Inactive"
+
+msgid "USERS"
+msgstr "Users"
+
+msgid "USER_MODIFIED"
+msgstr "User modified successfully."
+
+msgid "USER_ADDED"
+msgstr "User added successfully."
+
+msgid "RESERT_PWD_MAIL_SENT"
+msgstr "A mail was sent to reset the password."
+
+msgid "ACTIVATION_SUCCESS"
+msgstr "Activation successful."
+
+msgid "TRANSLATION"
+msgstr "Translation"
+
+msgid "EXPORT"
+msgstr "Export"
+
+msgid "DELETE_CONFIRMATION"
+msgstr "Are you sure you want to delete this record."
+
+msgid "FILE_REQ"
+msgstr "file is required"
+
+msgid "SHOWING"
+msgstr "showing"
+
+msgid "TO"
+msgstr "to"
+
+msgid "OF"
+msgstr "of"
+
+msgid "DISPLAY"
+msgstr "Display"
+
+msgid "ARREANGE_TABLE"
+msgstr "Arrange"
+
+msgid "UNDO_DELETE"
+msgstr "undo delete"
+
+msgid "SECTOR"
+msgstr "Sector"
+
+msgid "FRAMEWORK"
+msgstr "Framework"
+
+msgid "INSTITUTION"
+msgstr "Institution"
+
+msgid "GOAL"
+msgstr "Outcome"
+
+msgid "CONVENTION"
+msgstr "Convention"
+
+msgid "MOVE_DOWN"
+msgstr "Move Down"
+
+msgid "MOVE_UP"
+msgstr "Move Up"
+
+msgid "DIM_VALUE"
+msgstr "Dimension Value"
+
+msgid "IMPORT_IC_IUS_TXT"
+msgstr "In order to import the Indicator Classifications and IUS to the database, kindly select a file to be imported and then click on the 'Import' button.
+                    Kindly note that the file to be imported should follow the same format as that of the exported Indicator Classifications and IUS file."
+
+msgid "IMPORT"
+msgstr "Import"
+
+msgid "INDICATOR"
+msgstr "Indicator"
+
+msgid "METADATA_DESC"
+msgstr "Metadata desc"
+
+msgid "METADATA_CAT"
+msgstr "Metadata Category"
+
+msgid "WRNG_SELECT_SOURCE"
+msgstr "Please select source"
+
+msgid "TXN_LIMIT"
+msgstr "Transaction limit"
+
+msgid "TXN_LIMIT_REQ"
+msgstr "Transaction limit required"
+
+msgid "COLOR_FROM"
+msgstr "Color from"
+
+msgid "LOGO"
+msgstr "Logo"
+
+msgid "TIME_PERIODS"
+msgstr "Time Periods"
+
+msgid "DELETE_ALL"
+msgstr "Delete All"
+
+msgid "CODE_REQ"
+msgstr "Code is Required."
+
+msgid "COMPILE"
+msgstr "Compile"
+
+msgid "COMPILE_SUCCESS"
+msgstr "Language Compiled Successfully."
+
+msgid "SET_PASSWORD"
+msgstr "Set Password"
+
+msgid "RESET_PWD"
+msgstr "Reset Password"
+
+msgid "SC"
+msgstr "Inequality Database"
+
+msgid "GL"
+msgstr "Global Database"
+
+msgid "CF"
+msgstr "Framework"
+
+msgid "TH"
+msgstr "Thematic Dashboard"
+
+msgid "IT"
+msgstr "Institution"
+
+msgid "CN"
+msgstr "Convention"
+
+msgid "ENTER_DATA"
+msgstr "Enter Data"
+
+msgid "SELECT_ALL"
+msgstr "Select All"
+
+msgid "SELECT_PLACEHOLDER"
+msgstr "-- Select --"
+
+msgid "ADMINISTRATION"
+msgstr "Administration"
+
+msgid "AREA"
+msgstr "Area"
+
+msgid "INCLUDE_SUMMARY_SHEET"
+msgstr "Include Summary Sheet"
+
+msgid "INCLUDE_MISSING_DATA"
+msgstr "Include Missing Data"
+
+msgid "UPLOAD_FILE"
+msgstr "Upload File"
+
+msgid "IMPORTING_DATA"
+msgstr "Importing Data."
+
+msgid "LOADING_TEXT"
+msgstr "Loading..."
+
+msgid "VERSION"
+msgstr "Version"
+
+msgid "ADAPATION_NAME"
+msgstr "Adaptation Name"
+
+msgid "DASHBOARD"
+msgstr "Dashboard"
+
+msgid "FROM_DATE"
+msgstr "From Date"
+
+msgid "TO_DATE"
+msgstr "To Date"
+
+msgid "DATA_ROW"
+msgstr "Data Row"
+
+msgid "ADAPTATION_URL"
+msgstr "Adaptation URL"
+
+msgid "PUBLISH_TO_ADAPTATION"
+msgstr "Publish to adaptation"
+
+msgid "PUBLISH"
+msgstr "Publish"
+
+msgid "PUBLISH_ADAPTATION_TEMPLATE_DEFINITION"
+msgstr "Publish template data file in case there is any update in Indicator, Unit, Subgroup, IUS, Classifications and/or Area"
+
+msgid "PUBLISH_ADAPTATION_MAP_DEFINITION"
+msgstr "Publish maps in case there is any update in map shape files"
+
+msgid "PUBLISH_ADAPTATION_QDS_DEFINITION"
+msgstr "Publish quick data search files in case there is any update in the database"
+
+msgid "PUBLISH_TEMPLATE"
+msgstr "Template (Indicator/Area)"
+
+msgid "PUBLISH_MAP"
+msgstr "Map"
+
+msgid "PUBLISH_QDS"
+msgstr "Quick Data Search"
+
+msgid "PUBLISH_SUCCESS_MSG"
+msgstr "Publish request is being processed. You will recieve a mail once the database is published."
+
+msgid "PASSWORD_INVALID"
+msgstr "Invalid password. Allows alphanumeric, ($,@,#,&), one upper case letter like Test@123"
+
+msgid "EXPORT_MRD_ONLY"
+msgstr "Most Recent Data"
+
+msgid "EXPORT_XLS"
+msgstr "Export (.xls)"
+
+msgid "DELET_SUCCESS_MSG"
+msgstr "Deleted successfully"
+
+msgid "EXPORT_CSV"
+msgstr "Export (.csv)"
+
+msgid "SUBMIT"
+msgstr "Submit"
+
+msgid "FORGOT_PASSWORD_SUCCESS"
+msgstr "Activation link has been sent successfully to your email."
+
+msgid "DEFAULT_SUBGROUP"
+msgstr "Default Subgroup"
+
+msgid "FORGOT_PASSWORD_VISIBLE"
+msgstr "Forgot Password Visible"
+
+msgid "INDICATOR_CLICKABLE"
+msgstr "Indicator Clickable"
+
+msgid "INDICATOR_VISIBLE"
+msgstr "Indicator Visible"
+
+msgid "LANGUAGE_CLICKABLE"
+msgstr "Language   Clickable"
+
+msgid "LANGUAGE_VISIBLE"
+msgstr "Language Visible"
+
+msgid "LOGS_CLICKABLE"
+msgstr "Logs Clickable"
+
+msgid "TIMEPERIOD_CLICKABLE"
+msgstr "Timeperiod Clickable"
+
+msgid "USER_CLICKABLE"
+msgstr " User Clickable"
+
+msgid "USER_VISIBLE"
+msgstr "User Visible   "
+
+msgid "VALIDATIONS_CLICKABLE"
+msgstr "Validations Clickable"
+
+msgid "VALIDATIONS_VISIBLE"
+msgstr "Validations Visible"
+
+msgid "DE_IMPORT_EXPORT_VISIBLE"
+msgstr "DE Import/Export Visible"
+
+msgid "ave"
+msgstr "av1"
+
+msgid "Dharna999"
+msgstr "Dharna999"
+

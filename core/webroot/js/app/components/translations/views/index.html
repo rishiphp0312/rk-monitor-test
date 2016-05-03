@@ -1,0 +1,106 @@
+<ul class="breadcrumb panel-breadcrumb">
+    <li>
+        <a ui-sref="dfaMonitoring.home">
+            <i class="fa fa-home"></i>
+        </a>
+    </li>
+    <li class="breadcrumb-active"> {{getTranslatedKey('TRANSLATION')}}</li>
+</ul>
+<div class="page-header">
+    <h2>{{getTranslatedKey('TRANSLATION')}}</h2>
+    <div class="toolbar toolbar-search">
+        <a class="btn btn-xs btn-default" ui-sref="dfaMonitoring.home.translation.add" tooltip-placement="bottom" tooltip="{{getTranslatedKey('ADD')}}"><i class="fa fa-plus"></i></a>
+        <a  class="btn btn-xs btn-default" ng-click="compileLanguage()" tooltip-placement="bottom" tooltip=" {{getTranslatedKey('COMPILE')}}"><i class="fa kd-compile"></i></a>
+        <a  class="btn btn-xs btn-default" ui-sref="dfaMonitoring.home.translation.importExport" tooltip-placement="bottom" tooltip=" {{getTranslatedKey('IMPRT_EXRT')}}"><i class="fa fa-exchange rotate-90"></i></a>
+        <div class="search">
+            <div class="input-group">
+                <div class="input text">
+                    <input type="text" class="form-control search-input focus" placeholder="{{getTranslatedKey('SEARCH')}}" ng-model="search">
+                </div>
+                <span class="input-group-btn">
+                    <button class="btn btn-xs btn-reset" type="button" ng-click="search=''"><i class="fa fa-close"></i></button>
+                    <button id="search-toggle" class="btn btn-default btn-xs" type="button"><i class="fa fa-search-plus"></i></button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper ng-scope">
+    <div class="panel">
+        <div class="alert alert-success" role="alert" ng-show="showCompileMsg">
+          {{getTranslatedKey('COMPILE_SUCCESS')}}
+            <a class="close" ng-click="showCompileMsg = false">×</a>
+        </div>
+        <div class="alert alert-success" role="alert" ng-show="showDeleteInfo">
+        {{getTranslatedKey('DELETE_SUCCESS_MSG')}}
+            <a class="close" ng-click="showDeleteInfo = false">×</a>
+        </div>
+        <div class="alert alert-info" role="alert" ng-show="showRecordInfo">
+          {{getTranslatedKey('NO_RECORD_MSG')}}
+            <a class="close" ng-click="showRecordInfo = false">×</a>
+        </div>
+        <div class="panel-body">
+            <div class="toolbar-responsive panel-toolbar" style="margin-bottom: 10px;">
+                <div class="toolbar-wrapper">
+                    <div class="input select">
+                        <div class="input-select-wrapper">
+                            <select class="form-control" ng-model="selectedLang" ng-change="langListChange()" ng-options="language as language.name for language in languageList">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive" style="overflow: inherit">
+                <table class="table table-curved table-sortable " style="table-layout: fixed;">
+                    <thead>
+                    <tr>
+                        <th style="width: 30%;"><a href="javascript:void(0)" ng-click="sort(defaultLang.code)" ng-class="{'asc': sortHeader == defaultLang.code && sortOrder == true, 'desc':sortHeader == defaultLang.code && sortOrder == false }">{{defaultLang.name}}</a></th>
+                        <th style="width: 30%;"><a href="javascript:void(0)" ng-click="sort(selectedLang.code)" ng-class="{'asc': sortHeader == selectedLang.code && sortOrder == true, 'desc':sortHeader == selectedLang.code && sortOrder == false }"> {{selectedLang.name}}</a></th>
+                        <th class="cell-action">{{getTranslatedKey('ACTION')}}</th>
+                    </tr>
+           </thead>
+                    <tbody data-link="row">
+                    <tr ng-repeat="key in langStringsList | orderBy : sortHeader : !sortOrder | filter:search  | paginationFilter : pagination.from : pagination.to : setTotalCount">
+
+                        <td>{{key[defaultLang.code]}}</td>
+                        <td>{{key[selectedLang.code]}}</td>
+                        <td class="rowlink-skip">
+                            <div class="uib-dropdown" uib-dropdown>
+                                <button class="btn btn-dropdown action-toggle" uib-dropdown-toggle>
+                                      {{getTranslatedKey('SELECT')}}<span class="caret-down"></span>
+                                </button>
+                                <ul class="dropdown-menu action-dropdown" role="menu" aria-labelledby="action-menu">
+                                    <div class="dropdown-arrow"><i class="fa fa-caret-up"></i></div>
+
+                                    <li role="presentation">
+                                        <a ui-sref="dfaMonitoring.home.translation.modify({keyCode: key.code})" role="menuitem" tabindex="-1"><i class="fa fa-pencil"></i> {{getTranslatedKey('EDIT')}}</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a ng-click="deleteLanguageKey(key.id)" role="menuitem" tabindex="-1"><i class="fa fa-trash"></i>  {{getTranslatedKey('DELETE')}}</a>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+           </tbody>
+                </table>
+            </div>
+            <!-- pagination -->
+            <div class="pagination-wrapper" ng-hide="pagination.totalCount == 0">
+                <uib-pagination total-items="pagination.totalCount" ng-model="pagination.currentPage" ng-change="paginationChanged()" items-per-page="pagination.pageSize" max-size="5" class="pagination-sm" boundary-links="true" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" rotate="false"></uib-pagination>
+                <div class="counter">
+                 {{getTranslatedKey('SHOWING')}} {{pagination.from}}   {{getTranslatedKey('TO')}} {{pagination.to > pagination.totalCount ? pagination.totalCount : pagination.to}}    {{getTranslatedKey('OF')}} {{pagination.totalCount}}   {{getTranslatedKey('RECORDS')}}
+                </div>
+                <div class="display-limit">
+                    <span>{{getTranslatedKey('DISPLAY')}}</span>
+                    <div class="input-select-wrapper">
+                        <select ng-model="pagination.pageSize" ng-options="pageSize for pageSize in pagination.pageSizes" ng-change="paginationChanged()">
+                        </select>
+                    </div>
+                    <p>{{getTranslatedKey('RECORDS')}}</p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</div>

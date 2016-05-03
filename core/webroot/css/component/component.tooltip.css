@@ -1,0 +1,68 @@
+/* TOOLTIP v.1.0.1 */
+
+.tooltip {
+  z-index: 9999 !important;
+}
+
+.icon-red {
+    color: #CC5C5C;
+}
+
+.tooltip-red .fa-exclamation-circle[data-toggle="tooltip"] {
+    cursor: pointer;   
+}
+
+.tooltip-red .tooltip {
+    margin-left: 83px !important;
+}
+
+.tooltip-red .tooltip-arrow {
+    left: 16px !important;
+}
+
+.tooltip-red {
+  width: 40px;
+  text-align: center;
+}
+
+.tooltip-red i {
+    transition: all .1s ease-in-out;
+    animation: pulse 1s infinite;
+    animation-play-state: running;
+    animation-delay: 0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.tooltip-red .tooltip-inner {
+    background-color: #CC5C5C !important;
+}
+
+.tooltip-red .tooltip.top .tooltip-arrow {
+    border-top-color: #CC5C5C !important;
+}
+
+/* RTL v.1.0.0 */
+
+.rtl .tooltip-red .tooltip {
+    margin-left: -82px !important;
+    width: 200px;
+}
+
+.rtl .tooltip-red .tooltip-arrow {
+    left: auto !important;
+    right: 13px !important;
+}
